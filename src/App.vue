@@ -11,6 +11,7 @@
       </ion-segment>
       <ExampleInfinite  v-if="activeSegment ==='infinite'"/>
       <ExamplePaging v-if="activeSegment ==='paging'"/>
+      <parentComponent/>
     </ion-content>
   </ion-app>
 </template>
@@ -21,6 +22,7 @@ import {ref} from 'vue';
 
 import ExampleInfinite from "./components/ExampleInfinite.vue";
 import ExamplePaging from "./components/ExamplePaging.vue";
+import parentComponent from "./components/PropsDrilling/ParentComponent.vue"
 const activeSegment = ref('paging')
 const changed = ({detail}) => {
   activeSegment.value = detail.value
