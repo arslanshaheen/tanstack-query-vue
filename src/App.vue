@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <ion-app>
     <ion-content class="ion-padding">
       <ion-segment value="paging" @ionChange="changed" :modelValue="activeSegment">
@@ -13,18 +13,28 @@
       <ExamplePaging v-if="activeSegment ==='paging'"/>
       <parentComponent/>
     </ion-content>
-  </ion-app>
+  </ion-app> 
 </template>
 
 <script  setup>
-import { IonApp, IonContent, IonSegment, IonLabel,IonSegmentButton } from "@ionic/vue";
-import {ref} from 'vue';
+// import { IonApp, IonContent, IonSegment, IonLabel,IonSegmentButton } from "@ionic/vue";
+// import {ref} from 'vue';
 
-import ExampleInfinite from "./components/ExampleInfinite.vue";
-import ExamplePaging from "./components/ExamplePaging.vue";
-import parentComponent from "./components/PropsDrilling/ParentComponent.vue"
-const activeSegment = ref('paging')
-const changed = ({detail}) => {
-  activeSegment.value = detail.value
-}
+// import ExampleInfinite from "./components/ExampleInfinite.vue";
+// import ExamplePaging from "./components/ExamplePaging.vue";
+// import parentComponent from "./components/PropsDrilling/ParentComponent.vue"
+// const activeSegment = ref('paging')
+// const changed = ({detail}) => {
+//   activeSegment.value = detail.value
+// }
+</script> -->
+
+<template>
+<Post/>
+</template>
+<script setup>
+import Post from './views/Post.vue';
+
+
+
 </script>
